@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bharatsecurityservices.com/sitemap.xml
