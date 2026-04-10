@@ -1,152 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bharat Security Services</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:wght@300;400;500;600&display=swap"
-        rel="stylesheet" />
-    <style>
-/* --- SERVICES SECTION UPDATE --- */
-.services-section { 
-    padding: 110px 0; 
-    background: #fdfdfd; /* Image background white ga undi kabatti light color ichanu */
-    position: relative; 
-}
-
-/* Card Style with Green Border */
-.service-card { 
-    background: #ffffff; 
-    border: 2px solid #3cb54a; /* Image lo unna Green Border */
-    border-radius: 20px;
-    padding: 30px; 
-    height: 100%; 
-    position: relative; 
-    transition: all 0.4s; 
-    display: flex; 
-    flex-direction: column;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* Image Overflow Effect */
-.card-image-top {
-    margin-top: -80px; /* Image ni card nundi baitaki nettadaniki */
-    margin-bottom: 20px;
-    position: relative;
-}
-
-/* Image paina unna label (Residential laaga) */
-.service-label-tag {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    background: #2c3e50;
-    color: white;
-    padding: 6px 15px;
-    border-radius: 8px;
-    font-size: 0.7rem;
-    font-weight: 700;
-}
-
-/* Icon Box Style */
-.service-icon { 
-    width: 50px; 
-    height: 50px; 
-    border-radius: 12px; 
-    background: #e8f5e9; /* Light green background */
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    margin-bottom: 15px; 
-    font-size: 1.2rem; 
-    color: #3cb54a; 
-    transition: 0.3s;
-}
-
-.service-card h5 { 
-    font-weight: 800; 
-    color: #0b1a33; 
-    font-size: 1.4rem; 
-    margin-bottom: 12px; 
-}
-
-.service-card > p { 
-    color: #6c757d; 
-    font-size: 0.9rem; 
-    line-height: 1.6; 
-    margin-bottom: 25px; 
-}
-
-/* Subtypes logic changed to Pills/Badges */
-.svc-subtypes { 
-    margin-top: auto; 
-    border-top: 1px solid #eee; 
-    padding-top: 20px; 
-}
-
-.svc-subtypes-title { 
-    font-size: 0.65rem; 
-    letter-spacing: 1px; 
-    text-transform: uppercase; 
-    color: #999; 
-    margin-bottom: 15px; 
-    display: block; 
-}
-
-.svc-pills-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.badge-pill {
-    background: #f1f4f6;
-    color: #555;
-    padding: 6px 14px;
-    border-radius: 50px;
-    font-size: 0.65rem;
-    font-weight: 700;
-    border: 1px solid #e0e0e0;
-}
-
-/* Hover effects */
-.service-card:hover { 
-    transform: translateY(-10px); 
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
-}
-    </style>
+    <title>Tooltip Form Example</title>
 </head>
+<body>
 
-<body> 
-    <div class="col-md-6 col-lg-4" style="margin-top: 60px;"> <div class="service-card fade-up">
-        <div class="card-image-top">
-            <img src="./assets/img/corporate.jpg" alt="Corporate" style="width:100%; border-radius:15px; height:200px; object-fit:cover; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-            <div class="service-label-tag">
-                <i class="fas fa-building me-1"></i> CORPORATE
-            </div>
-        </div>
+<h3>Registration Form</h3>
 
-        <div class="service-icon">
-            <i class="fas fa-building"></i>
-        </div>
+<form>
+    <!-- Name Field -->
+    Name: 
+    <input type="text" name="name" title="Mee full name enter cheyyandi"><br><br>
 
-        <h5>Corporate Security</h5>
-        <p>End-to-end protection for offices, IT parks, and commercial establishments with disciplined access control and visitor management systems.</p>
-        
-        <div class="svc-subtypes">
-            <span class="svc-subtypes-title">Available Types</span>
-            <div class="svc-pills-wrapper">
-                <span class="badge-pill">RECEPTION CONTROL</span>
-                <span class="badge-pill">FLOOR SECURITY</span>
-                <span class="badge-pill">WATCHMAN</span>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- Email Field -->
+    Email: 
+    <input type="email" name="email" title="Valid email address ivvandi"><br><br>
+
+    <!-- Password Field -->
+    Password: 
+    <input type="password" name="password" title="Minimum 6 characters undali"><br><br>
+
+    <!-- Submit Button -->
+    <button title="Form ni submit cheyyandi">Submit</button>
+</form>
+
 </body>
-
 </html>
